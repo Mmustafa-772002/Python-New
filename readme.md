@@ -204,7 +204,7 @@ my:variable = 80  # contains a colon
 # size of data types in python
 - You can use the `sys` module to get the size of an object in bytes using
     the `sys.getsizeof()` function
-    ```python
+```python
 import sys
 x = 5
 print(sys.getsizeof(x))  # Output: size of int object in bytes
@@ -225,5 +225,30 @@ print(sys.getsizeof(e))  # Output: size of bool object in bytes
 f = None
 print(sys.getsizeof(f))  # Output: size of NoneType object in bytes
 ```
+Output :
+```output
+28
+24
+54
+64
+48
+216
+240
+28
+16
+```
+
 - Note that the size of an object may vary depending on the implementation of python and the platform
 - The size of an object may also include additional overhead for memory management and garbage collection
+## Escape Sequence in Python
+In the python code we use escape sequence '\n' for new line and '\t' for tab space.
+```python
+print("Hello\nWorld")  # Output: Hello (new line) World
+print("Hello\tWorld")  # Output: Hello (tab space) World
+```
+Output : 
+```output
+HelloWorld
+Hello   World
+``` 
+
