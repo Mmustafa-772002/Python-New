@@ -1,11 +1,15 @@
-<<<<<<< HEAD
-a = 'mustafa'
-b = 'masuldar'
-c = b.count('m')
-print(c)
-=======
-a = 'mustafa'
-b = 'masuldar'
-c = b.count('m')
-print(c)
->>>>>>> 0f2a8001ec0c15c0acc5444fec132e4e61f813f2
+import sys
+number= 10 # here a is integer variable 
+name = "Hello" # here name is str
+number1 = 3.14 # here number1 is floating number 
+print(type(number))
+print("The size in bytes is : ", sys.getsizeof(number))
+print(type(name))
+print("The size in bytes is : ", sys.getsizeof(name))
+print(type(number1))
+print("The size in bytes is : ", sys.getsizeof(number1))
+
+#----------------------------
+
+
+

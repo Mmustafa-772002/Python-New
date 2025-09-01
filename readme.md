@@ -201,4 +201,29 @@ my,variable = 60  # contains a comma
 my;variable = 70  # contains a semicolon
 my:variable = 80  # contains a colon
 ```
-this is check for git add 
+# size of data types in python
+- You can use the `sys` module to get the size of an object in bytes using
+    the `sys.getsizeof()` function
+    ```python
+import sys
+x = 5
+print(sys.getsizeof(x))  # Output: size of int object in bytes
+y = 3.14
+print(sys.getsizeof(y))  # Output: size of float object in bytes
+z = "Hello"
+print(sys.getsizeof(z))  # Output: size of str object in bytes
+a = [1, 2, 3]
+print(sys.getsizeof(a))  # Output: size of list object in bytes
+b = (1, 2, 3)
+print(sys.getsizeof(b))  # Output: size of tuple object in bytes
+c = {1, 2, 3}
+print(sys.getsizeof(c))  # Output: size of set object in bytes
+d = {'a': 1, 'b': 2}
+print(sys.getsizeof(d))  # Output: size of dict object in bytes
+e = True
+print(sys.getsizeof(e))  # Output: size of bool object in bytes
+f = None
+print(sys.getsizeof(f))  # Output: size of NoneType object in bytes
+```
+- Note that the size of an object may vary depending on the implementation of python and the platform
+- The size of an object may also include additional overhead for memory management and garbage collection
